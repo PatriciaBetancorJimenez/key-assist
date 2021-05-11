@@ -1,0 +1,176 @@
+/////////////////////////////INDEX
+
+.violet {
+  color: #5d4b77;
+}
+
+//NAVBAR***********************************
+
+.navbar {
+  &__logo {
+    width: 15rem;
+  }
+
+  &-dark .navbar-nav .nav-link {
+    color: white;
+  }
+
+  &-nav li:nth-child(2) .dropdown-menu {
+    height: 40rem;
+    overflow: scroll;
+  }
+
+  &-nav li:nth-child(1) .dropdown-menu {
+    border-right: solid 15px white;
+  }
+
+  &-nav .nav-link::after {
+    color: black;
+  }
+
+  &-toggler {
+    outline: none;
+  }
+}
+
+.dropdown-item {
+  color: white;
+  &:hover {
+    color: black;
+  }
+}
+
+///HEADER***********************************
+
+.header {
+  padding-top: 78.63px;
+
+  &__img {
+    background-image: url("https://key-assist.co.uk/uploads/images/banner-full_c9ac3a9a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position-y: 50%;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(black, 0.5);
+  }
+
+  &__content {
+    color: white;
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    border: 1px white solid;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    &:hover {
+      color: black;
+      background-color: #28a745;
+    }
+  }
+
+  &__btn-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  &__h1,
+  &__text {
+    @media only screen and (max-width: 576px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+///CARDS***********************************
+
+.cards {
+  &__img {
+    width: 8rem;
+    display: block;
+    margin: auto;
+  }
+
+  &__btn {
+    @extend .header__btn;
+  }
+}
+
+///FOOTER***********************************
+
+.footer {
+  &__address p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: white;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      text-decoration: none;
+      color: #6069a5;
+    }
+  }
+
+  &__img {
+    width: 17rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__divider {
+    height: 0.5px;
+    background-color: white;
+  }
+}
+
+/////////////////////////////SERVICES
+
+///HEADER***********************************
+
+.services {
+  &__bg,
+  &__info {
+    background-color: #e4e4e4;
+  }
+  &__img {
+    width: 30rem;
+  }
+
+  &__accordion-text {
+    color: #6069a5;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+#collapsed {
+  text-decoration: none;
+}
